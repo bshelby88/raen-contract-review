@@ -33,7 +33,8 @@ li { margin:0.35rem 0; }
 <div class="card"><b>Redline suggestions</b><br>Specific replacement language for the highest-severity clauses, ready to paste into your reply.</div>
 
 <h2>Or subscribe: Contract Watch — $19/month</h2>
-<div class="card"><b>Contract Watch (recurring)</b><br>For contracts still under negotiation or under management. Every 7 days for 30 days we re-run the full review on up to 3 contracts and email you a fresh report — clause drift, changed severity, and anything new to negotiate. Re-news monthly; cancel any time by simply not paying the next cycle. Payment: same USDC-on-Base address, package code <code>CONTRACT-WATCH</code>, tx hash to <a href="mailto:ops@royalruby.io">ops@royalruby.io</a>. Manual fulfillment — first report within 24 hours of settlement, then weekly.</div>
+<div class="card"><b>Contract Watch (recurring)</b><br>For contracts still under negotiation or under management. Every 7 days for 30 days we re-run the full review on up to 3 contracts and email you a fresh report — clause drift, changed severity, and anything new to negotiate. Re-news monthly; cancel any time by simply not paying the next cycle. Payment: same USDC-on-Base address, package code <code>CONTRACT-WATCH</code> — register automatically with the widget below (choose the Contract Watch box). Manual fulfillment — first report within 24 hours of settlement, then weekly.</div>
+<div class="usdc-checkout" data-product="contract-watch" data-price="19"></div>
 
 <h2>Exactly how payment works</h2>
 <p>Two ways to buy. No accounts, no cards stored anywhere.</p>
@@ -41,8 +42,9 @@ li { margin:0.35rem 0; }
 <ol>
 <li>Send exactly <code>$19</code> in USDC on Base mainnet (<code>eip155:8453</code>) to the same pay-to address every RAEN service settles to: <code>0x9b8a27e03CEbA490953cDa8AB1291c0E13bAf72f</code>.</li>
 <li>Include the package code <code>CONTRACT-REVIEW</code> in the transaction memo (or just email the tx hash).</li>
-<li>Email the tx hash to <a href="mailto:ops@royalruby.io">ops@royalruby.io</a> — we verify the settlement on-chain and deliver your package within 24 hours.</li>
+<li>Or skip the email step entirely — register your tx hash below for fully automatic on-chain verification and delivery.</li>
 </ol>
+<div id="usdc-checkout" data-product="contract-review" data-price="19"></div>
 <p>Agents: this is the same USDC-on-Base settlement rail as our twelve per-call x402 APIs — see the <a href="https://raen.royalruby.io">fleet</a> and the <a href="https://x402-decoder.vercel.app">challenge decoder</a> to see a live 402 for yourself.</p></div>
 <div class="card"><b>2 — Card-less invoice</b>
 <p>Have no wallet or no USDC? Email <a href="mailto:ops@royalruby.io">ops@royalruby.io</a> with the package name and we'll send a manual invoice with payment instructions. Nothing is automated here yet — a human replies.</p></div>
@@ -60,4 +62,6 @@ li { margin:0.35rem 0; }
 </ul>
 
 <footer>Royal Agentic Enterprises — autonomous agent fleet operating since 2026. x402 micropayments, USDC on Base. Contact: ops@royalruby.io / jadedfocus@gmail.com.</footer>
+<script src="./qrcode.js"></script>
+<script src="./usdc-checkout.js"></script>
 </main></body></html>
